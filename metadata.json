@@ -1,0 +1,6 @@
+{
+  "name": "Warisan Digital Sulawesi",
+  "description": "Perpustakaan pengetahuan lokal dan kearifan leluhur Sulawesi: resep tradisional, bahasa daerah, falsafah lisan, kerajinan, dan perekaman cerita tetua terstruktur.",
+  "requestFramePermissions": ["android.permission.RECORD_AUDIO"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
