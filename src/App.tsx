@@ -5,22 +5,19 @@ import { HeritageLibrary } from './components/HeritageLibrary';
 import { SulawesiMap } from './components/SulawesiMap';
 import { GlossaryView } from './components/GlossaryView';
 import { QuizView } from './components/QuizView';
-import { StoryRecorderModal } from './components/StoryRecorderModal';
 import { HeritageDetailModal } from './components/HeritageDetailModal';
 import { HeritageItem, Province, Tribe } from './types/heritage';
 import {
   getBookmarkedIds,
   getSavedHeritageItems,
-  saveHeritageItem,
   toggleBookmark,
 } from './utils/storage';
-import { Landmark, Heart, Mic, BookOpen, Compass, Award } from 'lucide-react';
+import { Landmark, Heart } from 'lucide-react';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<'library' | 'map' | 'glossary' | 'quiz'>('library');
   const [items, setItems] = useState<HeritageItem[]>([]);
   const [bookmarkedIds, setBookmarkedIds] = useState<string[]>([]);
-  const [isRecorderOpen, setIsRecorderOpen] = useState(false);
   const [selectedDetailItem, setSelectedDetailItem] = useState<HeritageItem | null>(null);
 
   // Filter state passed from map or hero to library
@@ -32,12 +29,6 @@ export default function App() {
     setItems(loadedItems);
     setBookmarkedIds(getBookmarkedIds());
   }, []);
-
-  const handleSaveItem = (newItem: HeritageItem) => {
-    const updated = saveHeritageItem(newItem);
-    setItems(updated);
-    setSelectedDetailItem(newItem);
-  };
 
   const handleToggleBookmark = (id: string) => {
     const next = toggleBookmark(id);
@@ -67,7 +58,6 @@ export default function App() {
       <Navbar
         activeTab={activeTab}
         setActiveTab={setActiveTab}
-        onOpenRecorder={() => setIsRecorderOpen(true)}
         itemsCount={items.length}
       />
 
@@ -78,7 +68,6 @@ export default function App() {
           <div className="space-y-8 animate-in fade-in">
             {/* Hero Section */}
             <HeroSection
-              onOpenRecorder={() => setIsRecorderOpen(true)}
               onExploreMap={() => setActiveTab('map')}
               onSelectTribeFilter={handleSelectTribeFromMapOrHero}
               totalRecordsCount={items.length}
@@ -90,7 +79,6 @@ export default function App() {
               bookmarkedIds={bookmarkedIds}
               onToggleBookmark={handleToggleBookmark}
               onSelectItem={(item) => setSelectedDetailItem(item)}
-              onOpenRecorder={() => setIsRecorderOpen(true)}
               filterTribe={filterTribe}
               filterProvince={filterProvince}
               onResetFilters={handleResetFilters}
@@ -150,9 +138,6 @@ export default function App() {
               <button onClick={() => setActiveTab('quiz')} className="hover:text-amber-300 transition">
                 Kuis Budaya
               </button>
-              <button onClick={() => setIsRecorderOpen(true)} className="text-amber-400 font-semibold hover:underline">
-                + Rekam Penuturan Tetua
-              </button>
             </div>
           </div>
 
@@ -166,13 +151,6 @@ export default function App() {
           </div>
         </div>
       </footer>
-
-      {/* Story Recorder Modal */}
-      <StoryRecorderModal
-        isOpen={isRecorderOpen}
-        onClose={() => setIsRecorderOpen(false)}
-        onSaveItem={handleSaveItem}
-      />
 
       {/* Heritage Detail Modal */}
       <HeritageDetailModal

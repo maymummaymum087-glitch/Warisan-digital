@@ -7501,6 +7501,356 @@ export const INITIAL_HERITAGE_ITEMS: HeritageItem[] = [
     ],
     "likesCount": 338
   },
+  {
+    "id": "mamasa-resep-deppa-tori-mamasa",
+    "title": "Deppa Tori Mamasa & Kopi Sangrai Gandangdewata",
+    "subtitle": "Kue Beras Merah Wijen Gula Enau Teman Bersanding di Ruang Tengah Dingin",
+    "category": "resep",
+    "province": "Sulawesi Barat",
+    "tribe": "Mamasa",
+    "regionDetail": "Kecamatan Mamasa & Balla",
+    "elderNarrator": {
+      "name": "Nenek Indo’ Rina",
+      "age": 77,
+      "titleOrRole": "Pembuat Kue Adat Deppa Tori Lembah Mamasa",
+      "location": "Desa Balla, Mamasa"
+    },
+    "recordedBy": {
+      "name": "Yulius Tangdilintin",
+      "schoolOrAffiliation": "SMA Negeri 1 Mamasa",
+      "date": "15 September 2024"
+    },
+    "summary": "Deppa Tori Mamasa dibuat dari tepung beras ketan merah pegunungan yang dicampur lelehan gula aren enau murni dan ditaburi butiran wijen sangrai. Digoreng dengan minyak kelapa dalam wajan besi tebal, menghasilkan tekstur luar yang renyah dan bagian dalam yang lembut kenyal legit.",
+    "philosophicalMeaning": "Kemanisan gula aren melambangkan manisnya persaudaraan saat bertamu. Wijen yang melekat erat melambangkan kesatuan warga kampung yang tak mudah tercerai-berai.",
+    "localTerms": [
+      {
+        "term": "Deppa Tori",
+        "meaning": "Kue tradisional beras ketan merah gula aren bertabur wijen",
+        "language": "Mamasa"
+      },
+      {
+        "term": "Tori",
+        "meaning": "Wijen sangrai aroma harum gurih khas dataran tinggi",
+        "language": "Mamasa"
+      }
+    ],
+    "ingredientsOrMaterials": [
+      "500 gram beras ketan merah tumbuk halus",
+      "300 gram gula aren enau Mamasa cair kental",
+      "100 gram wijen putih sangrai",
+      "Minyak kelapa murni untuk menggoreng"
+    ],
+    "stepsOrNarrative": [
+      {
+        "stepNumber": 1,
+        "title": "Mencampur Adonan Ketan dan Gula Enau",
+        "description": "Tepung ketan diuleni perlahan bersama lelehan gula aren hangat hingga kalis dan mudah dibentuk."
+      },
+      {
+        "stepNumber": 2,
+        "title": "Membentuk Belah Ketupat & Membalur Wijen",
+        "description": "Adonan digilas setebal 1 cm, dipotong belah ketupat runcing, lalu ditekan di atas hamparan wijen sangrai."
+      },
+      {
+        "stepNumber": 3,
+        "title": "Menggoreng Api Sedang Sampai Merekah",
+        "description": "Kue digoreng hingga mengapung keemasan dan disajikan hangat bersama kopi arabika Mamasa."
+      }
+    ],
+    "preservationAdvice": "Nenek Indo’ Rina berpesan: \"Jangan ganti gula aren enau dengan gula putih pabrik, aromanya akan hilang.\"",
+    "estimatedEra": "Diwariskan sejak peradaban dapur Banua Sura abad ke-17",
+    "tags": [
+      "Mamasa",
+      "Deppa Tori",
+      "Kue Adat",
+      "Gula Aren",
+      "Sulawesi Barat"
+    ],
+    "likesCount": 285
+  },
+  {
+    "id": "bolmong-resep-dinangoi-sagu-gula-merah",
+    "title": "Dinangoi Khas Bolaang Mongondow",
+    "subtitle": "Olahan Tepung Sagu Panggang Tebal Berinti Gula Aren & Parutan Kelapa",
+    "category": "resep",
+    "province": "Sulawesi Utara",
+    "tribe": "Bolaang Mongondow",
+    "regionDetail": "Kotamobagu & Lolayan",
+    "elderNarrator": {
+      "name": "Nenek Ki Guhanga Halima",
+      "age": 79,
+      "titleOrRole": "Tetua Dapur Pusaka Bogani Kotamobagu",
+      "location": "Kotamobagu, Bolaang Mongondow"
+    },
+    "recordedBy": {
+      "name": "Rahmat Mokoginta",
+      "schoolOrAffiliation": "SMK Negeri 1 Kotamobagu",
+      "date": "18 September 2024"
+    },
+    "summary": "Dinangoi adalah panganan pusaka suku Bolaang Mongondow berbahan dasar sari pati sagu basah yang dicampur kelapa setengah tua, lalu dipanggang di wajan tanah liat hingga berkerak gurih dan ditaburi irisan gula aren cair di bagian tengahnya.",
+    "philosophicalMeaning": "Kekuatan dan kesederhanaan para ksatria Bogani tempo dulu yang selalu berbekal Dinangoi saat menjaga perbatasan negeri karena mengenyangkan dan tahan seharian penuh.",
+    "localTerms": [
+      {
+        "term": "Dinangoi",
+        "meaning": "Kue sagu lempeng bakar isi gula aren khas Bolmong",
+        "language": "Bolaang Mongondow"
+      },
+      {
+        "term": "Tawaro",
+        "meaning": "Tepung sagu basah alami hasil perasan batang rumbia",
+        "language": "Bolaang Mongondow"
+      }
+    ],
+    "ingredientsOrMaterials": [
+      "400 gram tepung sagu basah segar",
+      "1 butir kelapa setengah tua diparut memanjang",
+      "200 gram gula aren Bolmong disisir halus",
+      "1/2 sendok teh garam pegunungan"
+    ],
+    "stepsOrNarrative": [
+      {
+        "stepNumber": 1,
+        "title": "Mencampur Sagu dan Parutan Kelapa",
+        "description": "Tepung sagu disaring lalu diaduk bersama kelapa parut dan sedikit garam hingga berbutir butir lembap."
+      },
+      {
+        "stepNumber": 2,
+        "title": "Memanggang Tipis di Wajan Kuali",
+        "description": "Adonan disebar tipis merata di atas wajan panas tanpa minyak hingga bagian bawahnya mengering renyah."
+      },
+      {
+        "stepNumber": 3,
+        "title": "Menaburkan Gula Aren dan Melipat Rapi",
+        "description": "Taburkan irisan gula aren di tengah, lalu lipat Dinangoi menjadi setengah lingkaran hingga gula meleleh lumer."
+      }
+    ],
+    "preservationAdvice": "Nenek Halima berpesan: \"Kenalkan Dinangoi ini ke anak-anak muda kita agar mereka bangga dengan kelezatan sagu tanah Totabuan.\"",
+    "estimatedEra": "Diwariskan sejak era Kerajaan Manoppo abad ke-16",
+    "tags": [
+      "Bolaang Mongondow",
+      "Dinangoi",
+      "Sagu Bolmong",
+      "Kotamobagu",
+      "Sulawesi Utara"
+    ],
+    "likesCount": 295
+  },
+  {
+    "id": "kaili-kerajinan-tenun-bomba-donggala",
+    "title": "Kain Tenun Bomba Donggala: Mahakarya Benang Sutra Lembah Palu",
+    "subtitle": "Motif Kuncup Bunga Cengkih & Bunga Bomba Simbol Persaudaraan Nosarara Nosabatutu",
+    "category": "kerajinan",
+    "province": "Sulawesi Tengah",
+    "tribe": "Kaili",
+    "regionDetail": "Pusentolo & Salumbone, Donggala",
+    "elderNarrator": {
+      "name": "Nenek Marhumah",
+      "age": 81,
+      "titleOrRole": "Maestro Penenun Alat Walida Tradisional Donggala",
+      "location": "Limboro, Donggala"
+    },
+    "recordedBy": {
+      "name": "Rizal Wahyudi",
+      "schoolOrAffiliation": "Universitas Tadulako Palu",
+      "date": "20 September 2024"
+    },
+    "summary": "Tenun Bomba Donggala ditenun menggunakan alat tenun kayu gedogan kuno (Walida). Motif \"Bomba\" (kuncup bunga yang merekah) melambangkan kesucian hati, keterbukaan menyambut sesama, serta keindahan flora dataran Sulawesi Tengah.",
+    "philosophicalMeaning": "Prinsip \"Nosarara Nosabatutu\" (Kita bersaudara dan kita bersatu). Setiap hentakan sisir kayu tenun mengikat helai benang menjadi sehelai kain kuat laksana persatuan warga Kaili.",
+    "localTerms": [
+      {
+        "term": "Tenun Bomba",
+        "meaning": "Kain tenun tradisional khas suku Kaili dengan motif kuncup bunga",
+        "language": "Kaili"
+      },
+      {
+        "term": "Walida",
+        "meaning": "Alat kayu pemadat benang pakan pada alat tenun tradisional",
+        "language": "Kaili"
+      },
+      {
+        "term": "Nosarara Nosabatutu",
+        "meaning": "Falsafah persaudaraan kokoh dalam satu keluarga besar kemanusiaan",
+        "language": "Kaili"
+      }
+    ],
+    "toolsUsed": [
+      "Alat tenun gedogan kayu bitti (Walida)",
+      "Teropong bambu selongsong benang",
+      "Pewarna alami daun tarum & getah kayu"
+    ],
+    "stepsOrNarrative": [
+      {
+        "stepNumber": 1,
+        "title": "Membentangkan Benang Lusi di Bingkai Kayu",
+        "description": "Ratusan helai benang sutra diatur ketegangannya dengan cermat agar hasil kain rapi dan rapat."
+      },
+      {
+        "stepNumber": 2,
+        "title": "Mengikat Motif Bomba dengan Tali Rafia Alami",
+        "description": "Bagian benang diikat kencang sebelum dicelup ke dalam larutan rebusan kulit kayu untuk menciptakan gradasi warna."
+      },
+      {
+        "stepNumber": 3,
+        "title": "Menenun dengan Irama Detak Hati yang Tenang",
+        "description": "Penenun memasukkan teropong benang dan menghentak bilah Walida dengan irama konstan hingga kain rampung berhari-hari."
+      }
+    ],
+    "preservationAdvice": "Nenek Marhumah berpesan: \"Penenun muda harus sabar. Menenun Bomba ini meditasi batin agar jiwa kita lembut dan berbudi luhur.\"",
+    "estimatedEra": "Diwariskan sejak era kemaharajaan Banawa Donggala abad ke-17",
+    "tags": [
+      "Kaili",
+      "Tenun Bomba",
+      "Donggala",
+      "Nosarara Nosabatutu",
+      "Kerajinan Adat",
+      "Sulawesi Tengah"
+    ],
+    "likesCount": 335
+  },
+  {
+    "id": "mandar-kerajinan-tenun-sabe-sure-penghulu",
+    "title": "Kain Tenun Sa’be Mandar Motif Sure’ Penghulu",
+    "subtitle": "Keanggunan Tenun Sutra Mandar di Bawah Kolong Rumah Panggung Balanipa",
+    "category": "kerajinan",
+    "province": "Sulawesi Barat",
+    "tribe": "Mandar",
+    "regionDetail": "Tinambung & Karama, Balanipa, Polman",
+    "elderNarrator": {
+      "name": "Nenek Indo’ Salma",
+      "age": 78,
+      "titleOrRole": "Maestro Penenun Sa’be Mandar Pusaka Balanipa",
+      "location": "Tinambung, Polewali Mandar"
+    },
+    "recordedBy": {
+      "name": "Nurhaliza & Ridwan",
+      "schoolOrAffiliation": "SMA Negeri 1 Tinambung",
+      "date": "22 September 2024"
+    },
+    "summary": "Sa’be Mandar adalah kain sarung sutra kebanggaan kaum perempuan Mandar. Motif \"Sure’ Penghulu\" memiliki corak garis-garis tegas geometris hitam, merah marun, dan benang emas yang melambangkan kepemimpinan yang berwibawa, adil, dan berakhlak Malaqbi.",
+    "philosophicalMeaning": "Karakter \"Malaqbi\" (anggun, bersahaja, dan teguh dalam kebenaran). Menenun Sa’be adalah simbol bakti dan kesetiaan perempuan Mandar dalam menyokong keluarga.",
+    "localTerms": [
+      {
+        "term": "Sa’be Mandar",
+        "meaning": "Kain sarung sutra tenun tangan tradisional khas tanah Mandar",
+        "language": "Mandar"
+      },
+      {
+        "term": "Sure’ Penghulu",
+        "meaning": "Motif garis kotak berwibawa lambang ketegasan pemimpin adat",
+        "language": "Mandar"
+      },
+      {
+        "term": "Panette’",
+        "meaning": "Sebutan kehormatan bagi perempuan penenun sutra Mandar",
+        "language": "Mandar"
+      }
+    ],
+    "toolsUsed": [
+      "Alat tenun gedogan kayu ulin (Tena)",
+      "Bilah sisir kayu pengetuk (Karro)",
+      "Kili-kili pemintal benang sutra"
+    ],
+    "stepsOrNarrative": [
+      {
+        "stepNumber": 1,
+        "title": "Memintal Helai Sutra Ulat Murbei",
+        "description": "Serat sutra dipintal menjadi benang kuat lalu direbus bersama daun pewarna alami mengkudu dan tarum."
+      },
+      {
+        "stepNumber": 2,
+        "title": "Menata Benang Motif Sure’ di Alat Tena",
+        "description": "Penataan pola warna membutuhkan ketelitian tinggi agar garis-garis simetris bertemu tepat saat dipakai melingkar."
+      },
+      {
+        "stepNumber": 3,
+        "title": "Menenun di Udara Terbuka Kolong Rumah",
+        "description": "Suara ketukan kayu Karro berpadu dengan desau angin pantai mengiringi lahirnya sehelai sarung pusaka bernilai tinggi."
+      }
+    ],
+    "preservationAdvice": "Nenek Salma berpesan: \"Gadis Mandar yang bisa menenun Sa’be adalah gadis yang memiliki kesabaran samudra. Rawatlah warisan ibu ini.\"",
+    "estimatedEra": "Diwariskan sejak era Kerajaan Balanipa abad ke-16",
+    "tags": [
+      "Mandar",
+      "Sabe Mandar",
+      "Sure Penghulu",
+      "Tenun Sutra",
+      "Kerajinan",
+      "Sulawesi Barat"
+    ],
+    "likesCount": 342
+  },
+  {
+    "id": "sangihe-kerajinan-tenun-serat-pisang-kofo",
+    "title": "Kain Tenun Serat Pisang Kofo: Mahakarya Abaka Kepulauan Sangihe",
+    "subtitle": "Seni Menenun Serat Batang Pisang Liar Musa Textilis Warisan Raja Tampungang Lawo",
+    "category": "kerajinan",
+    "province": "Sulawesi Utara",
+    "tribe": "Sangihe",
+    "regionDetail": "Tahuna & Tabukan Utara, Sangihe",
+    "elderNarrator": {
+      "name": "Oma Maria Hontong",
+      "age": 82,
+      "titleOrRole": "Penenun Terakhir Serat Pisang Kofo Sangihe",
+      "location": "Tahuna, Kepulauan Sangihe"
+    },
+    "recordedBy": {
+      "name": "Christian Makasenda",
+      "schoolOrAffiliation": "Komunitas Pusaka Nusa Utara Tahuna",
+      "date": "24 September 2024"
+    },
+    "summary": "Kain Kofo adalah kain tenun purba yang ditenun bukan dari kapas atau sutra, melainkan dari serat pelepah batang pisang abaka liar (Musa textilis) yang tumbuh di lereng gunung api Sangihe. Seratnya dipisahkan dengan pisau bambu, dikeringkan, disambung satu per satu dengan tangan, lalu ditenun menjadi kain yang kuat, sejuk, dan tahan terhadap air laut.",
+    "philosophicalMeaning": "Somahe Kai Kehage: ketangguhan luar biasa yang lahir dari bahan alami yang tampaknya sederhana. Kain Kofo adalah bukti adaptasi brilian masyarakat kepulauan samudra.",
+    "localTerms": [
+      {
+        "term": "Kain Kofo",
+        "meaning": "Kain tenun tradisional berbahan serat pelepah pisang abaka khas Sangihe",
+        "language": "Sangihe"
+      },
+      {
+        "term": "Abaka",
+        "meaning": "Pohon pisang hutan liar penghasil serat terkuat di dunia",
+        "language": "Sangihe"
+      },
+      {
+        "term": "Sasambo Kofo",
+        "meaning": "Nyanyian puitis pengiring penarikan serat pisang",
+        "language": "Sangihe"
+      }
+    ],
+    "toolsUsed": [
+      "Pisau kerik bambu pembersih serat",
+      "Alat tenun gedogan kayu kelapa",
+      "Batu kali penghalus permukaan kain"
+    ],
+    "stepsOrNarrative": [
+      {
+        "stepNumber": 1,
+        "title": "Memanen Batang Pisang Abaka di Lereng Tebing",
+        "description": "Pelepah pisang hutan dikelupas lapis demi lapis untuk diambil serat terdalamnya yang berwarna putih perak."
+      },
+      {
+        "stepNumber": 2,
+        "title": "Menyerut dan Mengeringkan Serat Kofo",
+        "description": "Serat ditarik di bawah mata pisau bambu hingga terpisah dari lendirnya, lalu dijemur di angin sepoi laut."
+      },
+      {
+        "stepNumber": 3,
+        "title": "Menyambung Simpul Halus dan Menenun",
+        "description": "Tiap ujung serat disambung simpul mikroskopis lalu ditenun menjadi kain busana adat para bangsawan bahari."
+      }
+    ],
+    "preservationAdvice": "Oma Maria berpesan: \"Pohon pisang abaka masih tumbuh subur di hutan kita. Jangan biarkan keterampilan menyambung serat Kofo ini mati bersama orang-orang tua.\"",
+    "estimatedEra": "Diwariskan sejak era Raja Gumansalangi abad ke-15",
+    "tags": [
+      "Sangihe",
+      "Kain Kofo",
+      "Pisang Abaka",
+      "Tahuna",
+      "Tenun Purba",
+      "Sulawesi Utara"
+    ],
+    "likesCount": 360
+  },
 ];
 
 export const SULAWESI_QUIZ_QUESTIONS: QuizQuestion[] = [

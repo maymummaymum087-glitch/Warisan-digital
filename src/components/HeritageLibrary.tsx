@@ -9,8 +9,8 @@ import {
   GraduationCap,
   Sparkles,
   MapPin,
-  Mic,
   Calendar,
+  RotateCcw,
 } from 'lucide-react';
 import { HeritageCategory, HeritageItem, Province, Tribe } from '../types/heritage';
 
@@ -19,7 +19,6 @@ interface HeritageLibraryProps {
   bookmarkedIds: string[];
   onToggleBookmark: (id: string) => void;
   onSelectItem: (item: HeritageItem) => void;
-  onOpenRecorder: () => void;
   filterTribe?: Tribe | null;
   filterProvince?: Province | null;
   onResetFilters: () => void;
@@ -41,7 +40,6 @@ export const HeritageLibrary: React.FC<HeritageLibraryProps> = ({
   bookmarkedIds,
   onToggleBookmark,
   onSelectItem,
-  onOpenRecorder,
   filterTribe,
   filterProvince,
   onResetFilters,
@@ -157,7 +155,7 @@ export const HeritageLibrary: React.FC<HeritageLibraryProps> = ({
     searchQuery.trim().length > 0;
 
   return (
-    <div className="space-y-6">
+    <div id="heritage-library-section" className="space-y-6">
       {/* Category Pills Slider / Bar */}
       <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none">
         {CATEGORIES.map((cat) => (
@@ -418,15 +416,22 @@ export const HeritageLibrary: React.FC<HeritageLibraryProps> = ({
               Belum Ada Warisan yang Cocok
             </h3>
             <p className="text-xs text-stone-400 max-w-md mx-auto">
-              Tidak ditemukan arsip budaya untuk kriteria pencarian tersebut. Anda dapat menjadi orang pertama yang merekam cerita tetua untuk kategori ini!
+              Tidak ditemukan arsip budaya untuk kriteria pencarian tersebut. Silakan bersihkan kata kunci atau atur ulang filter pencarian.
             </p>
           </div>
           <button
-            onClick={onOpenRecorder}
+            onClick={() => {
+              setSearchQuery('');
+              setSelectedProvinceFilter('all');
+              setSelectedTribeFilter('all');
+              setSelectedCategory('all');
+              setOnlyBookmarked(false);
+              onResetFilters();
+            }}
             className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-semibold text-stone-900 bg-amber-400 hover:bg-amber-300 shadow-md shadow-amber-500/20 transition"
           >
-            <Mic className="w-4 h-4" />
-            <span>Rekam Cerita Tetua Sekarang</span>
+            <RotateCcw className="w-4 h-4" />
+            <span>Reset Semua Filter Pencarian</span>
           </button>
         </div>
       ) : (

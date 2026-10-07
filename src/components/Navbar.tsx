@@ -1,17 +1,15 @@
 import React from 'react';
-import { BookOpen, Mic, Compass, Sparkles, BookMarked, Landmark, Award } from 'lucide-react';
+import { BookOpen, Compass, Sparkles, BookMarked, Landmark, Award } from 'lucide-react';
 
 interface NavbarProps {
   activeTab: 'library' | 'map' | 'glossary' | 'quiz';
   setActiveTab: (tab: 'library' | 'map' | 'glossary' | 'quiz') => void;
-  onOpenRecorder: () => void;
   itemsCount: number;
 }
 
 export const Navbar: React.FC<NavbarProps> = ({
   activeTab,
   setActiveTab,
-  onOpenRecorder,
   itemsCount,
 }) => {
   return (
@@ -53,7 +51,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             >
               <BookOpen className="w-4 h-4" />
               <span>Perpustakaan</span>
-              <span className="text-[11px] px-1.5 py-0.2 rounded-full bg-stone-800 text-stone-300 font-mono">
+              <span className="text-[11px] px-1.5 py-0.5 rounded-full bg-stone-800 text-stone-300 font-mono">
                 {itemsCount}
               </span>
             </button>
@@ -95,19 +93,12 @@ export const Navbar: React.FC<NavbarProps> = ({
             </button>
           </nav>
 
-          {/* Primary Action Button: Rekam Wawancara Tetua */}
-          <div className="flex items-center gap-2">
-            <button
-              onClick={onOpenRecorder}
-              className="group relative inline-flex items-center gap-2 px-3.5 sm:px-4 py-2 rounded-xl text-sm font-semibold text-stone-900 bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-400 hover:from-amber-300 hover:to-yellow-300 shadow-md shadow-amber-500/20 hover:shadow-amber-500/40 transition-all transform active:scale-95"
-            >
-              <span className="relative flex h-2.5 w-2.5">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-500 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-red-600"></span>
-              </span>
-              <Mic className="w-4 h-4 text-stone-900 group-hover:scale-110 transition-transform" />
-              <span className="font-medium tracking-tight">Rekam Wawancara</span>
-            </button>
+          {/* Quick Info Badge on the right */}
+          <div className="hidden sm:flex items-center gap-2">
+            <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-stone-950/80 border border-amber-900/40 text-xs text-amber-300 font-medium">
+              <Sparkles className="w-3.5 h-3.5 text-amber-400" />
+              <span>15 Suku Adat • 6 Provinsi</span>
+            </div>
           </div>
         </div>
 

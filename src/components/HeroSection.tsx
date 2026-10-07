@@ -1,9 +1,8 @@
 import React from 'react';
-import { Mic, BookOpen, Compass, Sparkles, MapPin, Landmark } from 'lucide-react';
+import { BookOpen, Compass, Sparkles, MapPin, Landmark } from 'lucide-react';
 import { Tribe } from '../types/heritage';
 
 interface HeroSectionProps {
-  onOpenRecorder: () => void;
   onExploreMap: () => void;
   onSelectTribeFilter: (tribe: Tribe) => void;
   totalRecordsCount: number;
@@ -28,7 +27,6 @@ const TRIBES: { name: Tribe; region: string; icon: string }[] = [
 ];
 
 export const HeroSection: React.FC<HeroSectionProps> = ({
-  onOpenRecorder,
   onExploreMap,
   onSelectTribeFilter,
   totalRecordsCount,
@@ -56,17 +54,22 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
         {/* Narrative Description */}
         <p className="text-sm sm:text-lg text-stone-300 font-serif leading-relaxed max-w-3xl mx-auto">
-          Setiap resep nenek, teknik tenun, permainan tradisional, filosofi bahasa, hingga kearifan bertani dan maritim adalah mutiara peradaban. Pelajar merekam cerita orang tua ➔ aplikasi menyusunnya menjadi perpustakaan pengetahuan terstruktur untuk setiap kampung di seluruh Sulawesi.
+          Setiap resep pusaka nenek, teknik tenun, permainan rakyat, filosofi bahasa, hingga kearifan bertani dan maritim adalah mutiara peradaban. Ensiklopedia warisan hidup terlengkap untuk 15 suku adat di 6 provinsi jazirah Sulawesi.
         </p>
 
         {/* Primary Call to Actions */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
           <button
-            onClick={onOpenRecorder}
+            onClick={() => {
+              const el = document.getElementById('heritage-library-section');
+              if (el) {
+                el.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
             className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-2xl text-sm font-bold text-stone-900 bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-400 hover:from-amber-300 hover:to-yellow-300 shadow-xl shadow-amber-500/25 transition transform active:scale-95"
           >
-            <Mic className="w-4 h-4 text-stone-900" />
-            <span>Mulai Wawancara & Rekam Cerita Tetua</span>
+            <BookOpen className="w-4 h-4 text-stone-900" />
+            <span>Jelajahi Perpustakaan Warisan ({totalRecordsCount} Arsip)</span>
           </button>
 
           <button
@@ -74,7 +77,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-2xl text-sm font-semibold text-stone-200 bg-stone-850 hover:bg-stone-800 border border-stone-700 hover:border-amber-700/60 shadow transition"
           >
             <Compass className="w-4 h-4 text-amber-400" />
-            <span>Jelajahi Peta 15 Suku</span>
+            <span>Jelajahi Peta 15 Suku Adat</span>
           </button>
         </div>
 
